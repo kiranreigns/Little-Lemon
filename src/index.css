@@ -6,6 +6,8 @@
   /* Colors */
   --color-primary-green: #495e57;
   --color-primary-yellow: #f4ce14;
+  --color-primary-yellow-dark: #e5b800;
+  --color-primary-yellow-light: #f7d943;
   --color-secondary-orange: #ee9972;
   --color-secondary-pink: #fbdabb;
   --color-highlight-light: #edefee;
@@ -20,24 +22,56 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
+
+  /* Animations for Specials Component */
+  --animate-fade-in-up: fade-in-up 0.5s ease-out;
+  --animate-hover-rise: hover-rise 0.2s ease-out;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hover-rise {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-8px);
+    }
+  }
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     font-family: var(--font-karla);
     background: var(--color-highlight-light);
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-markazi text-primary-green leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-markazi leading-tight;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-markazi text-primary-green font-bold;
+    @apply text-3xl md:text-4xl font-markazi font-bold;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl font-markazi text-primary-green font-bold;
+    @apply text-2xl md:text-3xl font-markazi font-bold mb-3;
+  }
+
+  p {
+    @apply font-karla;
   }
 
   main {
@@ -47,4 +81,13 @@
   header {
     @apply py-4 bg-white shadow-md;
   }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
