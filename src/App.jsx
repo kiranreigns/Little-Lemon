@@ -10,6 +10,7 @@ import {
 } from "./components";
 import { Home, Reservations, LoginPage, OrderOnline, BagPage } from "./pages";
 import { BagProvider } from "./components/BagContext";
+import { ConfirmedBooking } from "./components";
 
 function App() {
   return (
@@ -24,11 +25,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/reservations" element={<Reservations />} />
+            <Route path="/booking-confirmed" element={<ConfirmedBooking />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/order" element={<OrderOnline />} />
             <Route path="/bag" element={<BagPage />} />
           </Routes>
         </Suspense>
+
         <Footer />
       </BagProvider>
     </BrowserRouter>
