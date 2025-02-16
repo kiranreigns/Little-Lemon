@@ -10,4 +10,11 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./setupTests.js",
   },
+
+  build: {
+    outDir: "dist",
+    sourcemap: true,
+  },
+  // Add this if you're using client-side routing (e.g., React Router)
+  base: "/",
 });

@@ -112,4 +112,4 @@ Kiran S - [@linkedin](www.linkedin.com/in/kiran-s-428404249)
 
 E-mail - [@email](kiran01001011@gmail.com)
 
-Project Link: [https://github.com/your-username/little-lemon](https://github.com/your-username/little-lemon)
+Project Link: [https://github.com/kiranreigns/Little-Lemon](https://github.com/kiranreigns/Little-Lemon)
