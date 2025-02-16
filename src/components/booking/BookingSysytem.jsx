@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer } from "react";
 import BookingForm from "./BookingForm";
 import { fetchAPI } from "../../services/api";
 
@@ -32,12 +32,10 @@ const BookingSystem = () => {
   };
 
   return (
-    <div>
-      <BookingForm
-        availableTimes={state.availableTimes}
-        updateTimes={updateTimes}
-      />
-    </div>
+    <BookingForm
+      availableTimes={state.availableTimes}
+      updateTimes={updateTimes}
+    />
   );
 };
 

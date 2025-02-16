@@ -95,7 +95,7 @@ const OrderSummary = ({ subtotal, shipping = 5.99, tax = 0.05 * subtotal }) => {
         </div>
       </div>
 
-      <button className="w-full bg-primary-yellow text-gray-900 font-semibold py-2 rounded-lg hover:bg-primary-yellow-dark transition-colors">
+      <button className="w-full bg-primary-yellow text-gray-900 font-semibold py-2 rounded-lg hover:bg-primary-yellow-dark transition-all duration-200 active:scale-95 active:shadow-inner cursor-pointer">
         Proceed to Checkout
       </button>
     </div>

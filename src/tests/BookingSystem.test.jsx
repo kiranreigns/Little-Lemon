@@ -7,7 +7,6 @@ import { fetchAPI } from "../services/api";
 // Mock the API functions
 vi.mock("../services/api", () => ({
   fetchAPI: vi.fn(() => ["17:00", "18:00", "19:00"]),
-  submitAPI: vi.fn(() => Promise.resolve("Success")),
 }));
 
 describe("BookingSystem", () => {

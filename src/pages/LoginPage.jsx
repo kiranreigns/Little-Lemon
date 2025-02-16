@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// Define FormField outside LoginPage
 const FormField = ({
   label,
   type,

@@ -78,7 +78,7 @@ const Menu = () => {
   };
 
   return (
-    <section id="menu" className="py-16 px-4 bg-white">
+    <main id="menu" className="py-16 px-4 bg-gray-50">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl font-bold text-center mb-12 text-highlight-dark">
           Our Menu
@@ -124,7 +124,7 @@ const Menu = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 

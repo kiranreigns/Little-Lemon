@@ -3,7 +3,7 @@ import { restaurant, restaurantChef } from "../assets";
 
 const About = () => {
   return (
-    <section className="py-8 md:py-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-8 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">

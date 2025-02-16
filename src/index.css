@@ -8,20 +8,12 @@
   --color-primary-yellow: #f4ce14;
   --color-primary-yellow-dark: #e5b800;
   --color-primary-yellow-light: #f7d943;
-  --color-secondary-orange: #ee9972;
-  --color-secondary-pink: #fbdabb;
   --color-highlight-light: #edefee;
   --color-highlight-dark: #333333;
 
   /* Fonts */
   --font-karla: Karla, sans-serif;
   --font-markazi: "Markazi Text", serif;
-
-  /* Breakpoints */
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
 
   /* Animations for Specials Component */
   --animate-fade-in-up: fade-in-up 0.5s ease-out;
@@ -55,7 +47,6 @@
 
   body {
     font-family: var(--font-karla);
-    background: var(--color-highlight-light);
   }
 
   h1 {

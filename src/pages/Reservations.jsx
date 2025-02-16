@@ -3,9 +3,9 @@ import React from "react";
 
 const Reservations = () => {
   return (
-    <section className="bg-gray-50">
+    <main className="bg-gray-50">
       <BookingSystem />;
-    </section>
+    </main>
   );
 };
 

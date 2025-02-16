@@ -3,7 +3,7 @@ const BookingSlot = ({ time, isAvailable, onSelect, isSelected }) => {
     <button
       onClick={() => isAvailable && onSelect(time)}
       className={`
-        p-3 rounded-lg w-full text-center transition-colors
+        p-3 rounded-lg w-full text-center transition-colors cursor-pointer
         ${
           isSelected
             ? "bg-primary-green text-white"

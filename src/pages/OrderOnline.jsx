@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { BagContext } from "../components";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import { MdShoppingBasket } from "react-icons/md";
-import { foodItems } from "../utils/foodItems";
+import { foodItems } from "../data/foodItems";
 
 const MenuItem = ({ item, onAddToBag }) => {
   const [quantity, setQuantity] = useState(1);
@@ -24,11 +24,12 @@ const MenuItem = ({ item, onAddToBag }) => {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full ">
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full lg:h-full">
       <div className="relative aspect-[4/3] overflow-hidden rounded-t-2xl">
         <img
           src={item.image}
           alt={item.name}
+          loading="lazy"
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-pointer"
         />
         <div className="absolute top-3 right-3 z-10">
@@ -92,8 +93,8 @@ const MenuItem = ({ item, onAddToBag }) => {
           <button
             onClick={() => onAddToBag({ ...item, quantity })}
             className="flex-1 bg-primary-yellow text-highlight-dark font-semibold p-2 rounded-lg lg:py-2 lg:px-4  md:text-base text-sm
-                     hover:bg-primary-yellow-dark transition-all duration-300 flex items-center justify-center gap-2
-                     hover:shadow-md cursor-pointer"
+                     hover:bg-primary-yellow-dark transition-all duration-200 flex items-center justify-center gap-2
+                     hover:shadow-md cursor-pointer active:scale-95 active:shadow-inner"
           >
             <MdShoppingBasket className="w-5 h-5" />
             {itemInBag ? "Update Bag" : "Add to Bag"}
@@ -119,7 +120,7 @@ const OrderOnline = () => {
       : foodItems.filter((item) => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 lg:mb-12 gap-4">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
@@ -152,7 +153,7 @@ const OrderOnline = () => {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

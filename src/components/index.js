@@ -6,6 +6,7 @@ import Testimonials from "./Testimonials";
 import About from "./About";
 import BookingForm from "./booking/BookingForm";
 import BookingSystem from "./booking/BookingSysytem";
+import BookingSlot from "./booking/BookingSlot";
 import ConfirmedBooking from "./booking/ConfirmedBooking";
 import ComponentLoader from "./ComponentLoader";
 import ScrollToTop from "./ScrollToTop";
@@ -21,6 +22,7 @@ export {
   About,
   BookingForm,
   BookingSystem,
+  BookingSlot,
   ConfirmedBooking,
   ComponentLoader,
   ScrollToTop,
